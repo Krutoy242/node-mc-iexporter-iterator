@@ -1,0 +1,110 @@
+{
+  "name": "mc-iexporter-iterator",
+  "version": "1.0.0",
+  "description": "Iterate icons exported with Icon Exporter MC mod",
+  "main": "index.js",
+  "repository": "https://github.com/Krutoy242/node-mc-iexporter-iterator",
+  "license": "MIT",
+  "keywords": [
+    "minecraft",
+    "icons",
+    "textures",
+    "generator"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "glob": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-functional": "^4.2.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ],
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 120,
+    "htmlWhitespaceSensitivity": "ignore"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "env": {
+      "es6": true
+    },
+    "ignorePatterns": [
+      "node_modules",
+      "build",
+      "coverage"
+    ],
+    "plugins": [
+      "import",
+      "eslint-comments",
+      "functional"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:eslint-comments/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/typescript",
+      "plugin:functional/lite",
+      "plugin:you-dont-need-lodash-underscore/compatible",
+      "prettier",
+      "prettier/@typescript-eslint"
+    ],
+    "globals": {
+      "BigInt": true,
+      "console": true,
+      "WebAssembly": true
+    },
+    "rules": {
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "eslint-comments/disable-enable-pair": [
+        "error",
+        {
+          "allowWholeFile": true
+        }
+      ],
+      "eslint-comments/no-unused-disable": "error",
+      "import/order": [
+        "error",
+        {
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc"
+          }
+        }
+      ],
+      "sort-imports": [
+        "error",
+        {
+          "ignoreDeclarationSort": true,
+          "ignoreCase": true
+        }
+      ]
+    }
+  }
+}
