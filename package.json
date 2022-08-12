@@ -70,10 +70,8 @@
       "plugin:eslint-comments/recommended",
       "plugin:@typescript-eslint/recommended",
       "plugin:import/typescript",
-      "plugin:functional/lite",
       "plugin:you-dont-need-lodash-underscore/compatible",
-      "prettier",
-      "prettier/@typescript-eslint"
+      "prettier"
     ],
     "globals": {
       "BigInt": true,

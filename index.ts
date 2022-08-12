@@ -1,8 +1,9 @@
-import glob from 'glob'
 import { readFileSync } from 'fs'
 import { join, parse } from 'path'
 
-interface ItemIcon {
+import glob from 'glob'
+
+export interface ItemIcon {
   /** Full path of file C:/Path/To/File.png */
   filePath: string
 
@@ -30,9 +31,7 @@ interface ItemIcon {
  * @example for (const icon of iconIterator('x32')) { }
  * @param iconsDirectory Directory with all .png and .txt files exported with Icon Exporter Mod
  */
-export default function* iconIterator(
-  iconsDirectory = './'
-): Generator<ItemIcon, void, unknown> {
+export default function* iconIterator(iconsDirectory = './'): Generator<ItemIcon, void, unknown> {
   for (const filePath of glob.sync(join(iconsDirectory, '*.png'))) {
     const fileName = parse(filePath).name
 
