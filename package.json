@@ -1,6 +1,6 @@
 {
   "name": "mc-iexporter-iterator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iterate icons exported with Icon Exporter MC mod",
   "main": "index.js",
   "repository": "https://github.com/Krutoy242/node-mc-iexporter-iterator",
